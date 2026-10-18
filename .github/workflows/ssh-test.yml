@@ -17,6 +17,10 @@ jobs:
           mkdir -p ~/.ssh
           printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
+
+          echo "Checking private key..."
+          ssh-keygen -y -f ~/.ssh/id_rsa > /dev/null
+
           ssh-keyscan -p "$SSH_PORT" -H "$SSH_HOST" >> ~/.ssh/known_hosts
 
       - name: Test SSH Connection
@@ -25,7 +29,10 @@ jobs:
           SSH_PORT: ${{ secrets.SSH_PORT }}
           SSH_USER: ${{ secrets.SSH_USER }}
         run: |
-          ssh -o BatchMode=yes \
+          ssh -v \
+              -i ~/.ssh/id_rsa \
+              -o IdentitiesOnly=yes \
+              -o BatchMode=yes \
               -o ConnectTimeout=15 \
               -p "$SSH_PORT" \
               "$SSH_USER@$SSH_HOST" \
