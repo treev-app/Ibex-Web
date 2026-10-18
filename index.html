@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#073f31" />
+    <meta
+      name="description"
+      content="Ibexは、Slackハドル・Zoom・LINEなどの通話をMP4へ記録し、無料の端末内AIで文字起こしと議事録を作成するMacアプリです。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ibex | 会話に集中。記録はIbexに。" />
+    <meta
+      property="og:description"
+      content="画面と音声をMP4へ残し、端末内AIが文字起こしと議事録を作成。会議データは標準でMac内に保存します。"
+    />
+    <meta property="og:image" content="assets/ibex-app-icon.png" />
+    <title>Ibex | 会話に集中。記録はIbexに。</title>
+    <link rel="icon" href="assets/ibex-app-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">本文へ移動</a>
+
+    <header class="site-header">
+      <div class="header-inner page-width">
+        <a class="brand" href="#top" aria-label="Ibex公式サイトの先頭へ">
+          <img src="assets/ibex-app-icon.png" width="42" height="42" alt="" />
+          <span><strong>Ibex</strong><small>Private meeting capture</small></span>
+        </a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="global-nav">
+          <span></span><span></span><span></span><b class="sr-only">メニューを開く</b>
+        </button>
+        <nav id="global-nav" class="global-nav" aria-label="メインメニュー">
+          <a href="#features">できること</a>
+          <a href="#privacy">プライバシー</a>
+          <a href="#integrations">連携</a>
+          <a href="guide/">操作ガイド</a>
+          <a class="nav-download" href="https://github.com/treev-app/Ibex-Releases/releases" target="_blank" rel="noreferrer">ダウンロード</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section id="top" class="hero page-width">
+        <div class="hero-copy reveal">
+          <span class="eyebrow"><i></i> LOCAL-FIRST MEETING NOTES FOR MAC</span>
+          <h1>会話に集中。<br />記録はIbexに。</h1>
+          <p class="lead">Slackハドル・Zoom・LINEなど、いつもの通話画面を選ぶだけ。映像と音声をMP4へ保存し、無料の端末内AIが文字起こしと議事録まで仕上げます。</p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://github.com/treev-app/Ibex-Releases/releases" target="_blank" rel="noreferrer">
+              <span class="button-icon" aria-hidden="true">↓</span><span><strong>Mac版をダウンロード</strong><small>Apple Silicon対応</small></span>
+            </a>
+            <a class="button secondary" href="guide/"><span><strong>操作ガイドを見る</strong><small>初めての方はこちら</small></span><b aria-hidden="true">→</b></a>
+          </div>
+          <p class="release-note"><span></span>正式リリースに向けて準備中です。配布状況はダウンロードページでご確認ください。</p>
+        </div>
+
+        <div class="product-stage reveal" aria-label="Ibexの録画画面イメージ">
+          <div class="glow glow-one"></div><div class="glow glow-two"></div>
+          <div class="app-window">
+            <div class="window-top"><i></i><i></i><i></i><span>録画する</span></div>
+            <div class="app-layout">
+              <aside class="app-sidebar">
+                <div class="app-brand"><img src="assets/ibex-app-icon.png" alt="" /><b>Ibex</b></div>
+                <div class="app-nav active"><span>◉</span>録画する</div>
+                <div class="app-nav"><span>□</span>ミーティング</div>
+                <div class="app-grow"></div>
+                <div class="privacy-mini"><b>⌁ Privacy first</b><small>標準では外部送信なし</small></div>
+                <div class="app-nav"><span>⚙</span>設定</div>
+              </aside>
+              <div class="app-main">
+                <div class="hero-message"><img src="assets/ibex-app-icon.png" alt="" /><small>PRIVATE MEETING CAPTURE</small><h2>会話に集中。<br />記録はIbexに。</h2></div>
+                <div class="record-card">
+                  <span class="card-label">NEW RECORDING</span><em>準備完了</em>
+                  <h3>ミーティングを記録</h3>
+                  <label>ミーティング名</label><div class="fake-input">オンライン通話・10/19</div>
+                  <div class="fake-setting"><span><b>自分のマイクも含める</b><small>通話相手の音声と一緒にミックス</small></span><i></i></div>
+                  <div class="record-button"><strong>▣</strong><span><b>録画をはじめる</b><small>次に録画する画面を選択します</small></span><em>›</em></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-note note-detect"><b>● 通話を検知</b><span>Slack・Zoom・LINE</span></div>
+          <div class="floating-note note-local"><b>⌁ Mac内で処理</b><span>無料の端末内AI</span></div>
+        </div>
+      </section>
+
+      <section class="trust-strip">
+        <div class="page-width trust-inner">
+          <span>対応する通話</span>
+          <ul><li>Slack ハドル</li><li>Zoom</li><li>LINE 通話</li><li>その他の通話</li></ul>
+          <p>特定のサービスに縛られません。</p>
+        </div>
+      </section>
+
+      <section id="features" class="section page-width">
+        <header class="section-heading reveal">
+          <span class="section-label">WHAT IBEX DOES</span>
+          <h2>録画から議事録まで、<br />ひとつの流れに。</h2>
+          <p>通話アプリを切り替えても、操作はいつも同じ。録画ファイルと議事録を、自分で選んだ場所へ残せます。</p>
+        </header>
+        <div class="feature-grid">
+          <article class="feature-card large reveal"><span class="feature-number">01</span><div class="feature-icon">▣</div><h3>映像と音声をMP4へ</h3><p>共有した通話画面とシステム音声を記録します。自分の声を含めるか選択でき、保存先も自由に設定できます。</p><div class="file-chip"><span>▶</span><div><b>週次ミーティング.mp4</b><small>ムービー / Ibex</small></div></div></article>
+          <article class="feature-card reveal"><span class="feature-number">02</span><div class="feature-icon">⌁</div><h3>無料の端末内AI</h3><p>文字起こしと議事録作成をMac内で処理。ChatGPT PlusやAPI契約がなくても利用できます。</p><div class="status-line"><i></i><span>ローカルエンジン 準備完了</span></div></article>
+          <article class="feature-card reveal"><span class="feature-number">03</span><div class="feature-icon">◌</div><h3>通話の開始・終了を検知</h3><p>Slackハドルの着信、Zoomのルーム、LINE通話を確認し、録画の開始忘れや停止忘れを防ぎます。</p><div class="detect-card"><b>LINE通話を検知</b><span>録画の準備へ →</span></div></article>
+          <article class="feature-card wide reveal"><span class="feature-number">04</span><div><div class="feature-icon">≡</div><h3>読める議事録へ自動整理</h3><p>要約・決定事項・次のアクションを見やすく整理。文字起こしと録画を確認しながら修正できます。</p></div><div class="minutes-preview"><span>要点</span><p>次回リリースに向けて、公開手順とサポート導線を整備する。</p><span>決定事項</span><p>操作ガイドを公式サイトから案内する。</p></div></article>
+        </div>
+      </section>
+
+      <section class="flow-section">
+        <div class="page-width">
+          <header class="section-heading centered reveal"><span class="section-label">THREE SIMPLE STEPS</span><h2>話し始めるまで、迷わせません。</h2><p>録画する画面を選んだら、あとはいつもどおり会話するだけです。</p></header>
+          <ol class="flow-grid">
+            <li class="reveal"><span>01</span><div class="flow-icon">▣</div><h3>画面を選ぶ</h3><p>録画したい通話ウインドウをmacOSの共有画面から選択します。</p></li>
+            <li class="reveal"><span>02</span><div class="flow-icon">♩</div><h3>そのまま話す</h3><p>映像と音声を指定フォルダへ保存。録画中の状態もひと目で確認できます。</p></li>
+            <li class="reveal"><span>03</span><div class="flow-icon">▤</div><h3>議事録を確認</h3><p>終了後にAIが自動整理。内容を確認し、必要な場所へ保存します。</p></li>
+          </ol>
+          <div class="consent-note reveal"><span>!</span><div><b>録画前に参加者全員の同意をご確認ください</b><p>Ibexは同意確認を終えるまで録画を開始しません。地域の法令や組織の規則に従ってご利用ください。</p></div></div>
+        </div>
+      </section>
+
+      <section id="privacy" class="privacy-section page-width">
+        <div class="privacy-copy reveal"><span class="section-label light">PRIVACY FIRST</span><h2>会議の内容を、<br />必要以上に外へ出さない。</h2><p>Ibexはローカル処理を標準にしています。録画・文字起こし・議事録はMac内で処理され、ユーザーが外部保存を実行しない限り、会議データを外部サービスへ送りません。</p><ul><li><b>ローカル保存</b><span>録画と会議データは指定したMac内の場所へ</span></li><li><b>任意の外部連携</b><span>必要な議事録だけを、選択したサービスへ</span></li><li><b>暗号化された認証情報</b><span>連携トークンはmacOSの保護機能を利用</span></li></ul></div>
+        <div class="privacy-visual reveal"><div class="privacy-orbit"><span>⌁</span><b>YOUR MAC</b><small>Recording · Transcript · Minutes</small><i class="orbit-one"></i><i class="orbit-two"></i></div><div class="privacy-caption"><b>標準では外部送信なし</b><span>会議データの扱いを自分で選べます。</span></div></div>
+      </section>
+
+      <section id="integrations" class="section integrations-section page-width">
+        <header class="section-heading reveal"><span class="section-label">EXPORT WHERE YOU WORK</span><h2>議事録は、いつものメモアプリへ。</h2><p>会議ごとに保存先を選択できます。保存操作をした議事録だけが、選択したサービスへ送信されます。</p></header>
+        <div class="integration-grid">
+          <article class="reveal"><img src="assets/integrations/notion.png" alt="Notion" /><div><b>Notion</b><span>ページを検索して配下へ追加</span></div></article>
+          <article class="reveal"><img src="assets/integrations/coda.png" alt="Coda" /><div><b>Coda</b><span>選んだドキュメントへ追加</span></div></article>
+          <article class="reveal"><img src="assets/integrations/confluence.svg" alt="Confluence" /><div><b>Confluence</b><span>ページの配下へ追加</span></div></article>
+          <article class="reveal"><img src="assets/integrations/obsidian.svg" alt="Obsidian" /><div><b>Obsidian</b><span>Markdownとして保管庫へ保存</span></div></article>
+        </div>
+      </section>
+
+      <section class="pricing-preview">
+        <div class="page-width pricing-inner reveal">
+          <div><span class="section-label">PRICING</span><h2>まず試してから、<br />自分に合う使い方を。</h2><p>無料体験、継続して使えるサブスクリプション、1年間のアップデートを含む買い切りプランを予定しています。</p></div>
+          <div class="pricing-card"><span>COMING SOON</span><h3>料金プランは準備中です</h3><p>正式な価格と提供条件は、リリース前にこのページでお知らせします。</p><a href="guide/">先に操作方法を確認する →</a></div>
+        </div>
+      </section>
+
+      <section class="final-cta page-width reveal">
+        <img src="assets/ibex-app-icon.png" width="72" height="72" alt="" />
+        <span class="section-label">IBEX FOR MAC</span>
+        <h2>次の会議は、<br />会話だけに集中しよう。</h2>
+        <p>録画・文字起こし・議事録を、ひとつのアプリで。</p>
+        <div class="hero-actions centered-actions"><a class="button primary" href="https://github.com/treev-app/Ibex-Releases/releases" target="_blank" rel="noreferrer"><span class="button-icon">↓</span><span><strong>ダウンロードページへ</strong><small>GitHub Releases</small></span></a><a class="button secondary" href="guide/"><span><strong>操作ガイドを見る</strong><small>画面見本つき</small></span><b>→</b></a></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-width footer-main"><div class="brand footer-brand"><img src="assets/ibex-app-icon.png" width="42" height="42" alt="" /><span><strong>Ibex</strong><small>Private meeting capture</small></span></div><nav aria-label="フッターメニュー"><a href="#features">できること</a><a href="#privacy">プライバシー</a><a href="guide/">操作ガイド</a><a href="https://github.com/treev-app/Ibex-Releases" target="_blank" rel="noreferrer">リリース情報</a></nav></div>
+      <div class="page-width footer-bottom"><p>© <span id="copyright-year">2026</span> TREEV. All rights reserved.</p><p>録画の際は、参加者全員の同意を得てください。</p></div>
+    </footer>
+  </body>
+</html>
