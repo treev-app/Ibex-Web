@@ -47,3 +47,19 @@ jobs:
               -p "$SSH_PORT" \
               "$SSH_USER@$SSH_HOST" \
               "echo 'HOME DIRECTORY:'; pwd; echo 'WEB DIRECTORY:'; ls -ld ~/public_html/apps.treev.work"
+      - name: Check rsync
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_PORT: ${{ secrets.SSH_PORT }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+        run: |
+          echo "GitHub Actions:"
+          rsync --version | head -n 1
+
+          echo "mixhost:"
+          ssh -i ~/.ssh/id_rsa \
+              -o IdentitiesOnly=yes \
+              -o BatchMode=yes \
+              -p "$SSH_PORT" \
+              "$SSH_USER@$SSH_HOST" \
+              "command -v rsync && rsync --version | head -n 1"
